@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLEXBOX-ICONOS</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+        }
+        #contenedor {
+            display: flex;
+            flex-wrap: wrap;
+            border: 2px solid red;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+            margin: auto;
+            width: 80%;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        h1{
+            color: orange;
+            text-shadow: 3px 3px 5px black;
+            text-align: center;
+        }
+
+        .servicio {
+            width: 30%;
+            text-align: center;
+        }
+
+        nav {
+            background-color: burlywood;
+            display: flex;
+            justify-content: space-around;
+            padding: 10px;
+        }
+
+        .servicio img {
+            width: 40%;
+        }
+
+        .servicio p {
+            font-size: 20px;
+            color: blue;
+            font-weight: bold;
+            font-style: italic;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <a href="#">Quienes somos</a>
+        <a href="#">Donde estamos</a>
+        <a href="#">Contacto</a>
+        <a href="#nuestros-servicios">Nuestros Servicios</a>
+    </nav>
+    <section id="nuestros-servicios">
+        <h1>Nuestros Servicios</h1>
+        <div id="contenedor">
+            <article class="servicio">
+                <img src="images/asistencia.png" alt="Servicio Técnico">
+                <p>Servicio Técnico</p>
+            </article>
+            <article class="servicio">
+                <img src="images/consultoría-1-300x215.jpg" alt="Consultoría">
+                <p>Consultoría</p>
+            </article>
+            <article class="servicio">
+                <img src="images/mobile.png" alt="Apps Móviles">
+                <p>Apps Móviles</p>
+            </article>
+            <article class="servicio">
+                <img src="images/drone.jpg" alt="Drones">
+                <p>Drones</p>
+            </article>
+            <article class="servicio">
+                <img src="images/web.jfif" alt="Diseño Web">
+                <p>Diseño Web</p>
+            </article>
+            <article class="servicio">
+                <img src="images/soluciones.jpg" alt="Soluciones">
+                <p>Soluciones</p>
+            </article>
+        </div>
+    </section>
+</body>
+
+</html>
